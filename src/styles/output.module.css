@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  height: 144px;
+  border-top: 1px solid #000;
+}
+
+.textarea {
+  flex-grow: 1;
+  padding: 16px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  border: 0;
+  outline: 0;
+  resize: none;
+}
+
+.button {
+  width: 72px;
+  color: #fff;
+  font-size: 18px;
+  background-color: #000;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.buttonText {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  writing-mode: vertical-lr;
+}
