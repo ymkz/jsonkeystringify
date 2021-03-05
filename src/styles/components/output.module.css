@@ -1,7 +1,6 @@
 .container {
   display: flex;
   height: 144px;
-  border-top: 1px solid #000;
 }
 
 .textarea {
@@ -9,7 +8,10 @@
   padding: 16px;
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   border: 0;
+  border-top: 1px solid #000;
+  border-radius: 0;
   outline: 0;
+  -webkit-appearance: none;
   resize: none;
 }
 
@@ -19,6 +21,7 @@
   font-size: 18px;
   background-color: #000;
   border: 0;
+  border-top: 1px solid #000;
   outline: 0;
   cursor: pointer;
 }
