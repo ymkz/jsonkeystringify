@@ -3,7 +3,7 @@ import { Input } from '../components/input'
 import { Output } from '../components/output'
 import { destroyAllSnackbars, snackbar } from '../helpers/snackbar'
 import { transform } from '../helpers/transform'
-import layout from '../styles/layout.module.css'
+import layout from '../styles/pages/index.module.css'
 
 export function App() {
   const [input, setInput] = useState('')

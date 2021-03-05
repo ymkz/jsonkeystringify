@@ -1,4 +1,4 @@
-import style from '../styles/input.module.css'
+import style from '../styles/components/input.module.css'
 
 type Props = {
   input: string

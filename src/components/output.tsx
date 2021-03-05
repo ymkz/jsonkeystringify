@@ -1,4 +1,4 @@
-import style from '../styles/output.module.css'
+import style from '../styles/components/output.module.css'
 
 type Props = {
   output: string
