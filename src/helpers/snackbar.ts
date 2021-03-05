@@ -30,19 +30,9 @@ export const snackbar = {
       ...defaultOptions,
       theme: successTheme,
     }),
-  failure: (message: string, callback: () => void) =>
+  failure: (message: string) =>
     createSnackbar(message, {
       ...defaultOptions,
       theme: failureTheme,
-      timeout: 0,
-      actions: [
-        {
-          text: 'DISMISS',
-          callback: (_, snackbar) => {
-            snackbar.destroy()
-            callback()
-          },
-        },
-      ],
     }),
 }

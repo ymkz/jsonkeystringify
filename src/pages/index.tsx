@@ -8,7 +8,6 @@ import layout from '../styles/pages/index.module.css'
 export function App() {
   const [input, setInput] = useState('')
   const [output, setOutput] = useState('')
-  const [hasError, setHasError] = useState(false)
 
   const handleInput = (
     event: JSX.TargetedEvent<HTMLTextAreaElement, Event>
@@ -19,14 +18,8 @@ export function App() {
       const transformed = transform(value)
       setInput(value)
       setOutput(transformed)
-      snackbar.destroyAll()
     } catch (error) {
-      if (!hasError) {
-        setHasError(true)
-        snackbar.failure('Cannot parse non JSON literal', () => {
-          setHasError(false)
-        })
-      }
+      snackbar.failure('Cannot parse non JSON literal')
     }
   }
 
