@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks'
 import { Input } from '../components/input'
 import { Output } from '../components/output'
-import { destroyAllSnackbars, snackbar } from '../helpers/snackbar'
+import { snackbar } from '../helpers/snackbar'
 import { transform } from '../helpers/transform'
 import layout from '../styles/pages/index.module.css'
 
@@ -19,7 +19,7 @@ export function App() {
       const transformed = transform(value)
       setInput(value)
       setOutput(transformed)
-      destroyAllSnackbars()
+      snackbar.destroyAll()
     } catch (error) {
       if (!hasError) {
         setHasError(true)

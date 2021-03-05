@@ -1,5 +1,9 @@
-import { createSnackbar, SnackOptions, ThemeRules } from '@snackbar/core'
-export { destroyAllSnackbars } from '@snackbar/core'
+import {
+  createSnackbar,
+  destroyAllSnackbars,
+  SnackOptions,
+  ThemeRules,
+} from '@snackbar/core'
 
 const defaultOptions: SnackOptions = {
   position: 'center',
@@ -20,6 +24,7 @@ const failureTheme: ThemeRules = {
 }
 
 export const snackbar = {
+  destroyAll: destroyAllSnackbars,
   success: (message: string) =>
     createSnackbar(message, {
       ...defaultOptions,
