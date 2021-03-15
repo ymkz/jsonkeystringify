@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@snackbar/core": "^1.7.0",
-    "preact": "^10.5.9"
+    "preact": "^10.5.13"
   },
   "devDependencies": {
     "@prefresh/vite": "^2.0.0",
