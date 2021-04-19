@@ -18,7 +18,7 @@
     "preact": "^10.5.9"
   },
   "devDependencies": {
-    "@prefresh/vite": "^2.0.0",
+    "@prefresh/vite": "^2.2.1",
     "prettier": "^2.2.1",
     "prettier-plugin-organize-imports": "^1.1.1",
     "prettier-plugin-packagejson": "^2.2.10",
